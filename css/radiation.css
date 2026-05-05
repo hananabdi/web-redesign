@@ -13,19 +13,17 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
-.shop-title {
-  text-align: center;
-  padding-top: 40px;
-}
-
 .shop-title h1 {
-  font-family: Georgia, serif;
-  font-size: 42px;
-  color: #111;
+  color: white;
 }
 
 .shop-title p {
-  color: #555;
+  color: #dbeafe;
+}
+
+.mini-title {
+  color: #9bd8ff;
+}
 }
 
 /* Layout */
