@@ -1,185 +1,152 @@
+/* Page background */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #eef4fb;
-  color: #172033;
+  background-color: #f3f7fb;
+  color: #111;
 }
 
+
 .radiation-shop-page {
-  padding: 25px 7% 65px;
-  background:
-    radial-gradient(circle at 80% 45%, rgba(99, 179, 255, 0.35), transparent 25%),
-    radial-gradient(circle at 20% 90%, rgba(57, 120, 255, 0.22), transparent 25%),
-    linear-gradient(135deg, #050b24, #092f55, #0b4f78);
-  color: white;
+  background-color: white;
+  padding: 25px 7% 50px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .shop-title {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .shop-title h1 {
   font-family: Georgia, serif;
-  font-size: 48px;
-  color: white;
-  margin-bottom: 15px;
+  font-size: 42px;
+  color: #111;
 }
 
 .shop-title p {
-  color: #dbeafe;
-  font-size: 18px;
+  color: #555;
 }
 
-.mini-title {
-  color: #9bd8ff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
+/* Layout */
 .amazon-style-area {
   display: grid;
   grid-template-columns: 240px 1fr;
   gap: 25px;
-  padding: 40px 7% 70px;
-  background: #eef4fb;
+  padding: 40px 7%;
 }
 
+/* Sidebar */
 .filter-sidebar {
   background: white;
-  border-radius: 18px;
-  padding: 22px;
-  box-shadow: 0 10px 25px rgba(8, 44, 66, 0.12);
-  height: fit-content;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #ddd;
 }
 
 .filter-sidebar h3 {
-  color: #0b3d5c;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .filter-sidebar h4 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .filter-sidebar label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.shop-results {
-  width: 100%;
-}
-
+/* Results header */
 .results-header {
   background: white;
-  padding: 20px 24px;
-  border-radius: 18px;
-  margin-bottom: 22px;
-  box-shadow: 0 10px 25px rgba(8, 44, 66, 0.1);
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.results-header h2 {
-  color: #0b3d5c;
-  margin: 0;
-}
-
+/* Product list */
 .product-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 15px;
 }
 
+/* Product row */
 .shop-card {
   background: white;
-  border-radius: 18px;
-  padding: 22px;
+  border-radius: 12px;
+  padding: 18px;
   display: grid;
-  grid-template-columns: 120px 1fr 160px;
-  gap: 22px;
+  grid-template-columns: 140px 1fr 180px;
+  gap: 20px;
   align-items: center;
-  box-shadow: 0 10px 25px rgba(8, 44, 66, 0.12);
-  border: 1px solid #dce8f2;
+  border: 1px solid #ddd;
 }
 
+/* BIG icon box */
 .product-symbol {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #dff4ff, #ffffff);
-  color: #0b3d5c;
-  border-radius: 18px;
+  width: 120px;
+  height: 120px;
+  background: #f1f5f9;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 42px;
+  font-size: 50px;
 }
 
+/* Product text */
 .product-info h3 {
-  color: #0b3d5c;
-  font-size: 23px;
-  margin-bottom: 8px;
+  font-size: 20px;
+  margin-bottom: 6px;
 }
 
 .rating {
   color: #ff9900;
   font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.rating span {
-  color: #2563eb;
-  font-weight: normal;
+  margin-bottom: 6px;
 }
 
 .product-info p {
-  color: #4b5563;
-  line-height: 1.5;
+  color: #444;
 }
 
+/* Right side (price area) */
 .buy-box {
   text-align: left;
 }
 
 .price {
   color: #b12704;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .shipping {
-  color: #0b7a3b;
-  font-weight: bold;
-  margin-bottom: 12px;
+  color: green;
+  margin-bottom: 10px;
 }
 
+/* Button */
 .shop-card button {
   background-color: #ffd814;
-  color: #111827;
   border: none;
-  padding: 12px 20px;
-  border-radius: 22px;
+  padding: 10px;
+  border-radius: 20px;
   font-weight: bold;
-  cursor: pointer;
   width: 100%;
+  cursor: pointer;
 }
 
 .shop-card button:hover {
   background-color: #f7ca00;
 }
 
-footer {
-  background-color: #06172c;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
+/* Mobile */
 @media (max-width: 900px) {
   .amazon-style-area {
     grid-template-columns: 1fr;
@@ -188,11 +155,4 @@ footer {
   .shop-card {
     grid-template-columns: 1fr;
   }
-
-  .buy-box {
-    width: 100%;
-  }
 }
-
-
-  
